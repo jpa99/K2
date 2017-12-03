@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en"><head>
     <meta charset="utf-8">
@@ -57,9 +56,9 @@
                         <ul>
                             <li><a class="home" href="#welcome-area">Home</a></li>
                             <li><a href="#about">About</a></li>
-                            <li><a href="#demo">Demo</a></li>
-							<li><a href="#services">Features</a></li>
-                            <li><a href="#api">API</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#portfolio">Work</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -133,28 +132,28 @@
                                 <div class="progress">
                                     <div class="progress-bar prog-80" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:0%;">
 
-                                        <span>#1</span>
+                                        <span>1</span>
                                     </div>
                                 </div>
                                 <p>Step 2: BACKTEST AGAINST HISTORICAL DATA</p>
                                 <div class="progress">
                                     <div class="progress-bar prog-90" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
 
-                                        <span>#2</span>
+                                        <span>2</span>
                                     </div>
                                 </div>
                                 <p>Step 3: CONDUCT LIVE TRADING</p>
                                 <div class="progress">
                                     <div class="progress-bar prog-86" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
 
-                                        <span>#3</span>
+                                        <span>3</span>
                                     </div>
                                 </div>
                                 <p>Step 4: PROFIT!</p>
                                 <div class="progress">
                                     <div class="progress-bar prog-94" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
 
-                                        <span>#4</span>
+                                        <span>4</span>
                                     </div>
                                 </div>
                             </div>
@@ -166,22 +165,60 @@
     </section>
     <!--End Skills Section-->
 
+    <!--Start Services Section-->
+    <section class="services padding-style1" id="services">
+        <div class="services-header">
+            <h4 class="section-title">PRODUCT FEATURES</h4>
+        </div>
+        <div class="services-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="service-item animation" data-animation="fadeInLeft" style="height:300px">
+                            <span><i class="fa fa-hourglass-half" aria-hidden="true"></i></span>
+                            <p class="content-title">HISTORICAL BACKTESTING</p>
+                            <p class="content-text">Backtest your data minute by minute against historical cryptocurrency prices</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="service-item animation" data-animation="pulse" style="height:300px">
+                            <span><i class="fa fa-search" aria-hidden="true"></i></span>
+                            <p class="content-title">FINANCIAL ANALYSIS</p>
+                            <p class="content-text">See how your algorithm ranks according to a variety of financial benchmarks such as RSI, Alpha, Beta, Sharpe ratio, etc...</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="service-item animation" data-animation="fadeInRight" style="height:300px">
+                            <span><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                            <p class="content-title">LIVE TRADING</p>
+                            <p class="content-text">Trade your algorithm on the market</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Services Section-->
+
 	<!--Start Demo Section-->
 	<section id="demo">
 		<div class="portfolio-header">
-            <h4 class="section-title" style="color:#00395A;">PRODUCT DEMO</h4>
+            <h4 class="section-title" style="color:#fff;">PRODUCT DEMO</h4>
         </div>
 		
 		<div id="demobuttoncontainer">
-			<input type="text" class="demobutton" value="1H" style="cursor:text;"/>
-			<input type="text" name="daterange" value="08/21/2017 - 12/03/2017" class="demobutton" style="padding-top:0.5em;padding-bottom:0.5em;width:14em;"/>
-			<select class="demobutton" style="padding-left:2.3em;"><option value="BTC">BTC</option><option value="XMR">XMR</option><option value="LTC">LTC</option><option value="ZEC">ZEC</option><option value="DASH">DASH</option></select>
-			<input type="button" class="demobuttonrun" value="Run" style="padding-top:0.7em;padding-bottom:0.7em;"/>
+			<input type="text" class="demobutton" value="Interval" style="cursor:text;"/>
+			<input type="text" name="daterange" value="01/01/2015 - 01/31/2015" class="demobutton" style="padding-top:0.5em;padding-bottom:0.5em;width:14em;"/>
+			<input type="text" class="demobutton" value="Currency" style="cursor:text;"/>
+			<input type="button" class="demobutton ripple" value="Run" style="padding-top:0.7em;padding-bottom:0.7em;"/>
 				<div style="clear:both"></div>
 		</div>
 		
 <script type="text/javascript">
+$(function() {
     $('input[name="daterange"]').daterangepicker();
+});
 </script>
 
 		
@@ -235,35 +272,263 @@
 		
 		<div style="clear:both"></div>
 	</section>
-	<!-- End Demo Section-->
 	
-    <!--Start Services Section-->
-    <section class="services padding-style1" id="services">
-        <div class="services-header">
-            <h4 class="section-title" style="color:#FFF;">PRODUCT FEATURES</h4>
+	<section id="api">
+		<div class="portfolio-header">
+            <h4 class="section-title">K<sub>2</sub> API</h4>
         </div>
-        <div class="services-content">
+		
+		<p style="width:60%;margin-left:auto;margin-right:auto;text-align:center;margin-bottom:2em;">In order for investors to use K<sub>2</sub>, they must utilize our API. The API bridges the gap between our backend algorithm and the user interaction.</p>
+		
+		<div id="apicontent">
+		<h6>API Heading 1</h6>
+			<p>Content 1</p>
+		<h6>API Heading 2</h6>
+			<p>Content 2</p>
+		<h6>API Heading 3</h6>
+			<p>Content 3</p>
+		</div>
+	
+	</section>
+	<!-- End Demo Section-->
+<!-- Temporarily Unused
+    <!--Start Portfolio Section--
+    <section class="portfolio padding-style1" id="portfolio">
+        <div class="portfolio-header">
+            <h4 class="section-title">MY WORKS</h4>
+        </div>
+        <div class="portfolio-content">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 col-sm-4">
-                        <div class="service-item animation" data-animation="fadeInLeft" style="height:300px">
-                            <span><i class="fa fa-hourglass-half" aria-hidden="true"></i></span>
-                            <p class="content-title">HISTORICAL BACKTESTING</p>
-                            <p class="content-text">Backtest your data minute by minute against historical cryptocurrency prices</p>
+                    <div class="col-md-12 col-sm-12">
+                        <div class="portfolio-content-head">
+                            <ul class="controls">
+                                <li class="filter" data-filter="all">ALL</li>
+                                <li class="filter" data-filter=".design">DESIGN</li>
+                                <li class="filter" data-filter=".development">DEVELOPMENT</li>
+                                <li class="filter" data-filter=".plugin">PLUGIN</li>
+                                <li class="filter" data-filter=".photography">PHOTOGRAPHY</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="service-item animation" data-animation="pulse" style="height:300px">
-                            <span><i class="fa fa-search" aria-hidden="true"></i></span>
-                            <p class="content-title">FINANCIAL ANALYSIS</p>
-                            <p class="content-text">See how your algorithm ranks according to a variety of financial benchmarks such as ROI, Alpha, Beta, Sharpe ratio, etc...</p>
+                    <div class="col-md-12 col-sm-12 col-xs">
+                        <div class="portfolio-content-items">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-4 col-xs-12 mix design">
+                                    <div class="portfolio-item">
+                                        <div class="portfolio-img">
+                                            <img src="images/portfolio/img1.jpg" alt="portfolio" class="img-responsive">
+                                        </div>
+                                        <div class="portfolio-overlay">
+                                            <p class="category">DESIGN</p>
+                                            <a href="#">
+                                                <div class="magnify-icon">
+                                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                                </div>
+                                            </a>
+                                            <a href="images/portfolio/img1.jpg" data-lightbox="image-1">
+                                                <div class="magnify-icon">
+                                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12 mix plugin">
+                                    <div class="portfolio-item">
+                                        <div class="portfolio-img">
+                                            <img src="images/portfolio/img2.jpg" alt="portfolio" class="img-responsive">
+                                        </div>
+                                        <div class="portfolio-overlay">
+                                            <p class="category">PLUGIN</p>
+                                            <a href="#">
+                                                <div class="magnify-icon">
+                                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                                </div>
+                                            </a>
+                                            <a href="images/portfolio/img2.jpg" data-lightbox="image-2">
+                                                <div class="magnify-icon">
+                                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12 mix photography">
+                                    <div class="portfolio-item">
+                                        <div class="portfolio-img">
+                                            <img src="images/portfolio/img3.jpg" alt="portfolio" class="img-responsive">
+                                        </div>
+                                        <div class="portfolio-overlay">
+                                            <p class="category">PHOTOGRAPHY</p>
+                                            <a href="#">
+                                                <div class="magnify-icon">
+                                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                                </div>
+                                            </a>
+                                            <a href="images/portfolio/img3.jpg" data-lightbox="image-3">
+                                                <div class="magnify-icon">
+                                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12 mix plugin">
+                                    <div class="portfolio-item">
+                                        <div class="portfolio-img">
+                                            <img src="images/portfolio/img4.jpg" alt="portfolio" class="img-responsive">
+                                        </div>
+                                        <div class="portfolio-overlay">
+                                            <p class="category">PLUGIN</p>
+                                            <a href="#">
+                                                <div class="magnify-icon">
+                                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                                </div>
+                                            </a>
+                                            <a href="images/portfolio/img4.jpg" data-lightbox="image-4">
+                                                <div class="magnify-icon">
+                                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12 mix design">
+                                    <div class="portfolio-item">
+                                        <div class="portfolio-img">
+                                            <img src="images/portfolio/img5.jpg" alt="portfolio" class="img-responsive">
+                                        </div>
+                                        <div class="portfolio-overlay">
+                                            <p class="category">DESIGN</p>
+                                            <a href="#">
+                                                <div class="magnify-icon">
+                                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                                </div>
+                                            </a>
+                                            <a href="images/portfolio/img5.jpg" data-lightbox="image-5">
+                                                <div class="magnify-icon">
+                                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12 mix development">
+                                    <div class="portfolio-item">
+                                        <div class="portfolio-img">
+                                            <img src="images/portfolio/img6.jpg" alt="portfolio" class="img-responsive">
+                                        </div>
+                                        <div class="portfolio-overlay">
+                                            <p class="category">DEVELOPMENT</p>
+                                            <a href="#">
+                                                <div class="magnify-icon">
+                                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                                </div>
+                                            </a>
+                                            <a href="images/portfolio/img6.jpg" data-lightbox="image-6">
+                                                <div class="magnify-icon">
+                                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12 mix development">
+                                    <div class="portfolio-item">
+                                        <div class="portfolio-img">
+                                            <img src="images/portfolio/img7.jpg" alt="portfolio" class="img-responsive">
+                                        </div>
+                                        <div class="portfolio-overlay">
+                                            <p class="category">DEVELOPMENT</p>
+                                            <a href="#">
+                                                <div class="magnify-icon">
+                                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                                </div>
+                                            </a>
+                                            <a href="images/portfolio/img7.jpg" data-lightbox="image-7">
+                                                <div class="magnify-icon">
+                                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12 mix photography">
+                                    <div class="portfolio-item">
+                                        <div class="portfolio-img">
+                                            <img src="images/portfolio/img8.jpg" alt="portfolio" class="img-responsive">
+                                        </div>
+                                        <div class="portfolio-overlay">
+                                            <p class="category">PHOTOGRAPHY</p>
+                                            <a href="#">
+                                                <div class="magnify-icon">
+                                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                                </div>
+                                            </a>
+                                            <a href="images/portfolio/img8.jpg" data-lightbox="image-8">
+                                                <div class="magnify-icon">
+                                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="service-item animation" data-animation="fadeInRight" style="height:300px">
-                            <span><i class="fa fa-clock-o" aria-hidden="true"></i></span>
-                            <p class="content-title">LIVE TRADING</p>
-                            <p class="content-text">Trade your algorithm on the market</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Portfolio Section--
+
+    <!--Start Experience Section--
+    <section class="experience padding-style1" id="experience">
+        <div class="experience-header">
+            <h4 class="section-title">MY EXPERIENCE</h4>
+        </div>
+        <div class="container">
+            <div class="experience-container">
+                <div class="row">
+                    <div class="col-md-6 left-item">
+                        <div class="experience-item">
+                            <div class="experience-circle"></div>
+                            <div class="experience-content">
+                                <h6>GRAPHICS DESIGNER</h6>
+                                <p class="range">2009-2011</p>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 right-item experience-top-margin">
+                        <div class="experience-item">
+                            <div class="experience-circle"></div>
+                            <div class="experience-content">
+                                <h6>UX/UI DESIGNER</h6>
+                                <p class="range">2011-2012</p>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 left-item experience-top-margin">
+                        <div class="experience-item">
+                            <div class="experience-circle"></div>
+                            <div class="experience-content">
+                                <h6>JUNIOR WEB DEVELOPER</h6>
+                                <p class="range">2012-2015</p>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 right-item last-item experience-top-margin">
+                        <div class="experience-item">
+                            <div class="experience-circle"></div>
+                            <div class="experience-content">
+                                <h6>SENIOR WEB DEVELPER</h6>
+                                <p class="range">2015-present</p>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                            </div>
                         </div>
                     </div>
 
@@ -271,66 +536,8 @@
             </div>
         </div>
     </section>
-    <!--End Services Section-->
-
-	<!--Start API Section-->
-	<section id="api">
-		<div class="portfolio-header">
-            <h4 class="section-title">K<sub>2</sub> API</h4>
-        </div>
-		
-		<p style="width:60%;margin-left:auto;margin-right:auto;text-align:center;margin-bottom:2em;">Our API allows investors to leverage the full capabilities of K<sub>2</sub>. The API bridges the gap between our backend algorithm and the user interaction.</p>
-		
-		<div id="apicontent">
-		<h6>Functions Defined</h6>
-		  <section id="table">
-		  <!--for demo wrap-->
-		  <div class="tbl-header">
-			<table cellpadding="0" cellspacing="0" border="0">
-			  <thead>
-				<tr>
-				  <th>Function</th>
-				  <th>Parameter</th>
-				  <th>Description</th>
-				</tr>
-			  </thead>
-			</table>
-		  </div>
-		  <div class="tbl-content">
-			<table cellpadding="0" cellspacing="0" border="0">
-			  <tbody>
-				<tr>
-				  <td>def __init__()</td>
-				  <td>Self, assets</td>
-				  <td>Takes parameter assets, a 2-tuple representing capital and shares, respectively </td>
-				</tr>
-				<tr>
-				  <td>def buy()</td>
-				  <td>Self, shares</td>
-				  <td>Opens a Long position with avilable capital, buying a specified amount of shares</td>
-				</tr>
-			  </tbody>
-			</table>
-		  </div>
-		</section>
-		<h6>Examples</h6>
-			<p style="margin-top:1em;"><span style="padding:2px 4px;color:#c7254e;background-color:#f9f2f4;">data.historical_range(100, 0)</span> returns a Pandas DataFrame containing historical information between 100 days ago and today.</p>
-			<p><span style="padding:2px 4px;color:#c7254e;background-color:#f9f2f4;">data.current_price()</span> returns a real value representing the current price for specified currency.</p>
-			<p><span style="padding:2px 4px;color:#c7254e;background-color:#f9f2f4;">account.value()</span> returns the net value of the portfolio, which is the sum of the capital and the current value of the shares.</p>
-		</div>
-	
-	</section>
-	<!--End API Section-->
-
-
-	<script type="text/javascript">
-		// '.tbl-content' consumed little space for vertical scrollbar, scrollbar width depend on browser/os/platfrom. Here calculate the scollbar width .
-		$(window).on("load resize ", function() {
-		  var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
-		  $('.tbl-header').css({'padding-right':scrollWidth});
-		}).resize();
-	</script>
-	
+    <!--End Experience Section--
+End Temporarily Unused-->
     <!--Start Footer-->
     <footer>
         <div class="container">
